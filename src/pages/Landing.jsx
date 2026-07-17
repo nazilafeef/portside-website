@@ -202,7 +202,7 @@ export default function Landing() {
               Request a Quote — WhatsApp
             </a>
             <a href={MD_EMAIL} className="btn-outline" style={{ fontSize: 15, padding: "15px 26px" }}>
-              Email the Managing Director
+              Email the Agency Desk
             </a>
           </div>
           <div style={{ marginTop: 20, fontSize: 13, color: "var(--ink-mute)", animation: "fadeUp .8s ease .48s both" }}>
@@ -255,7 +255,7 @@ export default function Landing() {
               </div>
             ))}
           </div>
-          <p style={{ fontStyle: "italic", fontSize: 14, color: "#6A7E99", margin: "28px 0 0", maxWidth: 760 }}>
+          <p style={{ fontStyle: "italic", fontSize: 14, color: "var(--body-soft)", margin: "28px 0 0", maxWidth: 760 }}>
             Owners and brokers: company registry, memberships, and executed-operation records are available behind the
             gate, and full documentation to qualified counterparties under NDA.
           </p>
@@ -306,7 +306,7 @@ export default function Landing() {
               Already registered? Sign in
             </a>
           </div>
-          <div style={{ marginTop: 20, fontSize: 12, color: "#6A7E99" }}>
+          <div style={{ marginTop: 20, fontSize: 12, color: "var(--ink-mute)" }}>
             Client identities are never disclosed. Full documentation available to qualified counterparties under NDA.
           </div>
         </div>
@@ -350,10 +350,10 @@ export default function Landing() {
         </p>
         <div style={{ display: "flex", gap: 14, flexWrap: "wrap", justifyContent: "center", marginTop: 32 }}>
           <a href={WA_LINK} target="_blank" rel="noopener noreferrer" className="btn-gold" style={{ fontSize: 15, padding: "15px 28px" }}>
-            WhatsApp +960 9993997
+            WhatsApp +960 924 9669
           </a>
           <a href={MD_EMAIL} className="btn-outline" style={{ fontSize: 15, padding: "15px 28px" }}>
-            afeef@portsideagency.com
+            admin@portsideagency.com
           </a>
         </div>
       </section>
@@ -371,7 +371,7 @@ export default function Landing() {
             <div style={{ fontSize: 13, color: "var(--ink-mute)", marginTop: 14, lineHeight: 1.7 }}>
               Portside Agency Pvt Ltd | H. Maadhoofiya, 10th Floor, Malé 20082, Republic of Maldives
             </div>
-            <div style={{ fontSize: 11.5, color: "#5B7191", marginTop: 10, lineHeight: 1.8 }}>
+            <div style={{ fontSize: 11.5, color: "#93A7C2", marginTop: 10, lineHeight: 1.8 }}>
               Reg. No. C00212023 | TIN 1154492 | D-U-N-S 984560571 | IMO Company No. 6418086 | BIMCO Member 180506 | IBIA
               Member S2748
             </div>

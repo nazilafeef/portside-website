@@ -78,7 +78,7 @@ export default function SignIn() {
         </button>
         <div style={{ display: "flex", alignItems: "center", gap: 12, margin: "20px 0" }}>
           <div style={{ flex: 1, height: 1, background: "#DCE4EF" }} />
-          <div style={{ fontSize: 12, color: "var(--ink-mute)" }}>or</div>
+          <div style={{ fontSize: 12, color: "#62748C" }}>or</div>
           <div style={{ flex: 1, height: 1, background: "#DCE4EF" }} />
         </div>
         <form onSubmit={handleEmail} style={{ display: "flex", flexDirection: "column", gap: 12 }}>
@@ -114,7 +114,7 @@ export default function SignIn() {
             New here? Create an account
           </a>
         </div>
-        <div style={{ textAlign: "center", fontSize: 11, color: "#9AA9BE", marginTop: 20, borderTop: "1px solid #EEF2F8", paddingTop: 14 }}>
+        <div style={{ textAlign: "center", fontSize: 11, color: "#62748C", marginTop: 20, borderTop: "1px solid #EEF2F8", paddingTop: 14 }}>
           Protected by Google Firebase Authentication.
         </div>
       </div>

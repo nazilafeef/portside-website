@@ -114,7 +114,7 @@ export default function SignUp() {
         </button>
         <div style={{ display: "flex", alignItems: "center", gap: 12, margin: "20px 0" }}>
           <div style={{ flex: 1, height: 1, background: "#DCE4EF" }} />
-          <div style={{ fontSize: 12, color: "var(--ink-mute)" }}>or</div>
+          <div style={{ fontSize: 12, color: "#62748C" }}>or</div>
           <div style={{ flex: 1, height: 1, background: "#DCE4EF" }} />
         </div>
         <form onSubmit={handleEmail} style={{ display: "flex", flexDirection: "column", gap: 12 }}>
@@ -127,7 +127,7 @@ export default function SignUp() {
             {busy ? "Creating account…" : "Create account"}
           </button>
         </form>
-        <div style={{ textAlign: "center", fontSize: 11.5, color: "var(--ink-mute)", marginTop: 14 }}>
+        <div style={{ textAlign: "center", fontSize: 11.5, color: "#62748C", marginTop: 14 }}>
           By registering you agree to our terms. We never share your details.
         </div>
         <div style={{ textAlign: "center", fontSize: 13, marginTop: 14 }}>
