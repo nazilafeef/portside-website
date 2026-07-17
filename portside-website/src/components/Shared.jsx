@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 
-export const WA_LINK = "https://wa.me/9609993997";
-export const MD_EMAIL = "mailto:afeef@portsideagency.com";
+export const WA_LINK = "https://wa.me/9609249669";
+export const MD_EMAIL = "mailto:admin@portsideagency.com";
 
 /* Per-route document title + description for SEO */
 export function usePageMeta(title, description) {

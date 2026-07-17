@@ -202,7 +202,7 @@ export default function Landing() {
               Request a Quote — WhatsApp
             </a>
             <a href={MD_EMAIL} className="btn-outline" style={{ fontSize: 15, padding: "15px 26px" }}>
-              Email the Managing Director
+              Email the Agency Desk
             </a>
           </div>
           <div style={{ marginTop: 20, fontSize: 13, color: "var(--ink-mute)", animation: "fadeUp .8s ease .48s both" }}>
@@ -350,10 +350,10 @@ export default function Landing() {
         </p>
         <div style={{ display: "flex", gap: 14, flexWrap: "wrap", justifyContent: "center", marginTop: 32 }}>
           <a href={WA_LINK} target="_blank" rel="noopener noreferrer" className="btn-gold" style={{ fontSize: 15, padding: "15px 28px" }}>
-            WhatsApp +960 9993997
+            WhatsApp +960 924 9669
           </a>
           <a href={MD_EMAIL} className="btn-outline" style={{ fontSize: 15, padding: "15px 28px" }}>
-            afeef@portsideagency.com
+            admin@portsideagency.com
           </a>
         </div>
       </section>
