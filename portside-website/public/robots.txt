@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /member
+
+Sitemap: https://www.portsideagency.com/sitemap.xml

@@ -1,0 +1,24 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Newsletter: anyone may subscribe (create only). Nobody can read the
+    // list from the website — you read it in the Firebase console.
+    match /newsletter_subscribers/{docId} {
+      allow create: if request.resource.data.keys().hasAll(['email', 'createdAt', 'source'])
+                    && request.resource.data.email is string
+                    && request.resource.data.email.matches('.+@.+\\..+')
+                    && request.resource.data.email.size() < 200;
+      allow read, update, delete: if false;
+    }
+
+    // Members: each signed-in user can read/write only their own record.
+    match /members/{uid} {
+      allow read, write: if request.auth != null && request.auth.uid == uid;
+    }
+
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

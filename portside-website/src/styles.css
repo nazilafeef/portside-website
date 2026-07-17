@@ -1,0 +1,179 @@
+:root {
+  --navy: #0B2545;
+  --navy-2: #13315C;
+  --navy-deep: #081B33;
+  --gold: #C9A227;
+  --gold-bright: #E0BC4E;
+  --gold-dark: #7A600E;
+  --offwhite: #F7F9FC;
+  --mist: #EEF2F8;
+  --ink-soft: #B9C6D8;
+  --ink-mute: #9BB0CB;
+  --card-line: #DCE4EF;
+  --body-soft: #4A607F;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--navy);
+  font-family: 'Public Sans', sans-serif;
+  color: var(--offwhite);
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--gold); text-decoration: none; }
+a:hover { color: var(--gold-bright); }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { animation: none !important; transition: none !important; }
+}
+
+/* ---------- Buttons ---------- */
+.btn-gold {
+  display: inline-block;
+  background: var(--gold);
+  color: var(--navy);
+  font-weight: 600;
+  border: none;
+  border-radius: 3px;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  font-family: 'Public Sans', sans-serif;
+}
+.btn-gold:hover { background: var(--gold-bright); color: var(--navy); }
+
+.btn-outline {
+  display: inline-block;
+  border: 1px solid rgba(201, 162, 39, 0.6);
+  color: var(--gold);
+  font-weight: 500;
+  border-radius: 3px;
+  background: transparent;
+  cursor: pointer;
+  font-family: 'Public Sans', sans-serif;
+}
+.btn-outline:hover {
+  border-color: var(--gold);
+  background: rgba(201, 162, 39, 0.08);
+  color: var(--gold-bright);
+}
+
+.btn-google {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: #ffffff;
+  border: 1px solid #C4D0E0;
+  border-radius: 3px;
+  padding: 12px;
+  font-size: 14.5px;
+  font-weight: 500;
+  color: #3C4043;
+  cursor: pointer;
+  font-family: 'Public Sans', sans-serif;
+}
+.btn-google:hover { background: #F4F7FB; }
+
+/* ---------- Nav ---------- */
+.nav-link { color: #D8E1EE; font-size: 14px; letter-spacing: 0.02em; }
+.nav-link:hover { color: var(--gold); }
+
+/* ---------- Cards ---------- */
+.card-charter {
+  background: #ffffff;
+  border: 1px solid var(--card-line);
+  border-top: 2px solid var(--gold);
+  padding: 28px 26px;
+  transition: box-shadow 0.2s ease;
+}
+.card-charter:hover {
+  box-shadow: 0 10px 30px rgba(11, 37, 69, 0.10);
+  border-top-color: var(--gold-dark);
+}
+
+.card-agency {
+  background: #ffffff;
+  border: 1px solid var(--card-line);
+  padding: 24px;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  transition: box-shadow 0.2s ease;
+}
+.card-agency:hover { box-shadow: 0 10px 30px rgba(11, 37, 69, 0.10); }
+
+.card-record {
+  background: #ffffff;
+  border: 1px solid var(--card-line);
+  border-top: 2px solid var(--gold);
+  padding: 28px;
+  transition: box-shadow 0.2s ease;
+}
+.card-record:hover { box-shadow: 0 10px 30px rgba(11, 37, 69, 0.10); }
+
+/* ---------- Forms ---------- */
+.input-light {
+  padding: 12px 14px;
+  font-size: 15px;
+  border: 1px solid #C4D0E0;
+  border-radius: 3px;
+  font-family: 'Public Sans', sans-serif;
+  color: var(--navy-2);
+  background: #ffffff;
+  color-scheme: light;
+  width: 100%;
+}
+.input-light:focus { outline: 2px solid var(--gold); outline-offset: 1px; }
+
+.input-newsletter {
+  padding: 13px 16px;
+  font-size: 15px;
+  border: 1px solid #C4D0E0;
+  border-radius: 3px;
+  min-width: min(280px, 70vw);
+  font-family: 'Public Sans', sans-serif;
+  color: var(--navy-2);
+  background: #ffffff;
+}
+.input-newsletter:focus { outline: 2px solid var(--gold); outline-offset: 1px; }
+
+.footer-link { color: var(--ink-soft); }
+.footer-link:hover { color: var(--gold); }
+
+.form-error {
+  font-size: 13px;
+  color: #B3261E;
+  background: #FDECEA;
+  border: 1px solid #F5C6C0;
+  border-radius: 3px;
+  padding: 10px 12px;
+  line-height: 1.5;
+}
+
+/* Auth card shell */
+.auth-card {
+  position: relative;
+  background: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+  padding: 36px 34px 26px;
+  box-sizing: border-box;
+}
+
+/* Visible keyboard focus */
+a:focus-visible, button:focus-visible {
+  outline: 2px solid var(--gold-bright);
+  outline-offset: 2px;
+}
