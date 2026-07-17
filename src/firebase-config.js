@@ -11,12 +11,13 @@
 // (see firestore.rules in the project root).
 
 export const firebaseConfig = {
-  apiKey: "PASTE_YOUR_API_KEY",
-  authDomain: "PASTE_YOUR_PROJECT.firebaseapp.com",
-  projectId: "PASTE_YOUR_PROJECT_ID",
-  storageBucket: "PASTE_YOUR_PROJECT.appspot.com",
-  messagingSenderId: "PASTE_YOUR_SENDER_ID",
-  appId: "PASTE_YOUR_APP_ID",
+  apiKey: "AIzaSyCfirJRDJhZSzLVgV0MD9N_oWoHDxjUKN4",
+  authDomain: "portside-agency-v1-8dbdd.firebaseapp.com",
+  projectId: "portside-agency-v1-8dbdd",
+  storageBucket: "portside-agency-v1-8dbdd.firebasestorage.app",
+  messagingSenderId: "803366976996",
+  appId: "1:803366976996:web:bac69f49d4e6605bd69bf1",
+  measurementId: "G-RE66XCJLNF"
 };
 
 export const isFirebaseConfigured = !firebaseConfig.apiKey.startsWith("PASTE");
