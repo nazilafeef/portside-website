@@ -1,5 +1,5 @@
 {
   "projects": {
-    "default": "portside-agency-v1-8dbdd"
+    "default": "YOUR_FIREBASE_PROJECT_ID"
   }
 }

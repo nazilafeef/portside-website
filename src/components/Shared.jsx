@@ -34,7 +34,7 @@ export function Icon({ paths, size = 28 }) {
 export function Logo({ height = 44, onClick, style = {} }) {
   return (
     <img
-      src="/Logo.png"
+      src="/logo-v2.png"
       alt="Portside Agency"
       onClick={onClick}
       style={{
